@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@layer base {
+  :root {
+    --color-sakura: #FFB7C5;
+    --color-mint: #98FF98;
+    --color-lavender: #E6E6FA;
+    --color-neon-pink: #FF6EC7;
+    --color-neon-blue: #00F5FF;
+    --color-cream: #FFFDD0;
+  }
+}
+
+.sparkle {
+  animation: sparkle 1.5s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+}
+
+.neon-text {
+  text-shadow: 0 0 5px var(--color-neon-pink),
+               0 0 10px var(--color-neon-pink),
+               0 0 20px var(--color-neon-blue);
+}
+
+.retro-pattern {
+  background-image: 
+    radial-gradient(circle at 100% 150%, var(--color-sakura) 24%, var(--color-mint) 25%, var(--color-mint) 28%, var(--color-sakura) 29%, var(--color-sakura) 36%, var(--color-mint) 36%, var(--color-mint) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0 150%, var(--color-sakura) 24%, var(--color-mint) 25%, var(--color-mint) 28%, var(--color-sakura) 29%, var(--color-sakura) 36%, var(--color-mint) 36%, var(--color-mint) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50% 100%, var(--color-mint) 10%, var(--color-sakura) 11%, var(--color-sakura) 23%, var(--color-mint) 24%, var(--color-mint) 30%, var(--color-sakura) 31%, var(--color-sakura) 43%, var(--color-mint) 44%, var(--color-mint) 50%, var(--color-sakura) 51%, var(--color-sakura) 63%, var(--color-mint) 64%, var(--color-mint) 71%, transparent 71%, transparent);
+  background-size: 80px 40px;
+}
