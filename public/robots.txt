@@ -1,0 +1,30 @@
+# https://todolistvaporwavestlye.netlify.app/
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://todolistvaporwavestlye.netlify.app/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 1
+
+# Block access to specific files and directories
+Disallow: /src/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /dist/
+Disallow: /build/
+
+# Allow important assets
+Allow: /app.png
+Allow: /favicon.ico
+Allow: /manifest.json
+Allow: /sitemap.xml
+Allow: /sitemap.xsl
+
+# Rate limiting
+Request-rate: 1/1s
